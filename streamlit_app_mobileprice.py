@@ -12,8 +12,8 @@ import streamlit as st
 from xgboost import XGBRegressor
 
 # loading the trained model
-pickle_in = open('XGBoost_model.pkl', 'rb')
-regressor = pickle.load(pickle_in)
+pkl_file = open('XGBoost.pkl', 'rb')
+regressor = pickle.load(pkl_file)
 
 @st.cache_data()
 # defining the function which will make the prediction using the data which the user inputs
