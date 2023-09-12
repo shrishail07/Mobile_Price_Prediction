@@ -9,6 +9,7 @@ Original file is located at
 
 import pickle5
 import streamlit as st
+from xgboost import XGBRegressor
 
 # loading the trained model
 pickle_in = open('XGBoost_model.pkl', 'rb')
