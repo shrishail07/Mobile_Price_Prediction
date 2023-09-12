@@ -47,6 +47,8 @@ def prediction(Manufacturer, Category,Screen_Size, CPU,RAM, GPU, OS, Weight,  To
     Cat_Id = 3
   elif Category == "Workstation":
     Cat_Id = 4
+  else:
+    Cat_Id =5
   if CPU == "AMD A10-Serie":
     CPU_Id = 0
   elif CPU == "AMD A12-Series":
@@ -57,6 +59,9 @@ def prediction(Manufacturer, Category,Screen_Size, CPU,RAM, GPU, OS, Weight,  To
     CPU_Id = 10
   elif CPU == "Intel Core i7":
     CPU_Id = 11
+  else:
+    CPU_Id =20
+      
   if OS == "Android":
     OS_Id = 0
   elif OS == "Chrome OS":
@@ -67,6 +72,9 @@ def prediction(Manufacturer, Category,Screen_Size, CPU,RAM, GPU, OS, Weight,  To
     OS_Id = 3
   elif OS == "macOS":
     OS_Id = 4
+  else:
+    OS_Id = 5
+      
   if GPU == "AMD":
     GPU_ID = 0
   elif GPU == "ARM":
@@ -75,6 +83,8 @@ def prediction(Manufacturer, Category,Screen_Size, CPU,RAM, GPU, OS, Weight,  To
     GPU_ID = 2
   elif GPU == "Nvidia":
     GPU_ID = 3
+  else:
+    GPU_ID = 4
   if Touchscreen == "No":
     Touchscreen = 0
   else:
