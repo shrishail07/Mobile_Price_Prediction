@@ -7,13 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1fKbU6_xmex99WLFn9YYGAG5CNOGHSOS-
 """
 
-import pickle5
+import pickle
 import streamlit as st
 from xgboost import XGBRegressor
 
 # loading the trained model
 pickle_in = open('XGBoost_model.pkl', 'rb')
-regressor = pickle5.load(pickle_in)
+regressor = pickle.load(pickle_in)
 
 @st.cache_data()
 # defining the function which will make the prediction using the data which the user inputs
