@@ -4,3 +4,4 @@ matplotlib
 seaborn
 pickle5
 scikit-learn
+xgboost
